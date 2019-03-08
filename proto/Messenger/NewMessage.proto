@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Messenger/ConversationMessage.proto";
+
+message NewMessage {
+	repeated int32 participants = 1;
+	ConversationMessage message = 2;
+	int64 conversationId = 3;
+	bool isAlreadyRead = 4;
+}

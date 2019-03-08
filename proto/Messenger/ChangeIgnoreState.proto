@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Messenger/IgnoreStateAction.proto";
+
+message ChangeIgnoreState {
+	int32 userId = 1;
+	IgnoreStateAction action = 2;
+}

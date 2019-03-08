@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "core/FormattedText.proto";
+
+message ConversationMessage {
+	int64 messageId = 1;
+	string deprecated_text = 2;
+	int64 timestamp = 3;
+	int32 sender = 4;
+	NestedMessage nestedMessage = 5;
+	bool starred = 6;
+	bool hasSnap = 7;
+	FormattedText text = 8;
+	
+	message NestedMessage {
+		int64 messageId = 1;
+		string deprecated_text = 2;
+		int64 timestamp = 3;
+		int32 sender = 4;
+		NestedMessageType type = 5;
+		bool hasSnap = 6;
+		FormattedText text = 7;
+		
+		enum NestedMessageType {
+			Quote = 0;
+			Forward = 1;
+		}
+	}
+}

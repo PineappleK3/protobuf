@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "UserData/UserDataRequest.proto";
+
+message RequestUserData {
+	repeated UserDataRequest requests = 1;
+}

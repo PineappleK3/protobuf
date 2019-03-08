@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "google/protobuf/any.proto";
+
+message Token {
+	google.protobuf.Any message = 1;
+	bool logPerformance = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SnapDownloadResponse {
+	string url = 1;
+	int64 messageId = 2;
+	int64 photoId = 3;
+	bool isPreview = 4;
+	int32 snapType = 5; // Enum
+	string imageKey = 6;
+	int32 extraTime = 7;
+}

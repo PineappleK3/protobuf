@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Channel/ChannelIdentifier.proto";
+
+message CannotJoinChannel {
+	ChannelIdentifier channelID = 1;
+	string channelname = 2;
+	Reason reason = 3;
+
+	message Reason {
+		int32 type = 1;
+		string freetext = 2;
+	}
+	
+	enum Type {
+		PERMISSION = 0;
+		BANNED = 1;
+		FULL = 2;
+		REQUIREMENTS = 3;
+		DOES_NOT_EXIST = 4;
+		OTHER = 5;
+	}
+}

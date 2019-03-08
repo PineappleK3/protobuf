@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Channel/ChannelIdentifier.proto";
+import "Channel/MessageID.proto";
+import "core/FormattedText.proto";
+
+message MessageInChannelServer {
+	ChannelIdentifier channelID = 1;
+	int32 senderID = 2;
+	string deprecated_message = 3;
+	FormattedText message = 7;
+	int32 messageType = 4;
+	MessageID messageID = 5;
+	repeated int32 receiverID = 6;
+}

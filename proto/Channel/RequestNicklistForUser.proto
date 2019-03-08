@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Channel/ChannelIdentifier.proto";
+
+message RequestNicklistForUser {
+	ChannelIdentifier channelID = 1;
+	int32 userID = 2;
+}

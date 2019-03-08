@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "registration/RequestType.proto";
+import "registration/ErrorType.proto";
+import "registration/ErrorInfo.proto";
+
+message Error {
+	RequestType name = 1;
+	repeated string suggestions = 2;
+	string text = 3;
+	ErrorType errorType = 4;
+	ErrorInfo errorInfo = 5;
+}

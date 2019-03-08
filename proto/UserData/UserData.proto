@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "core/Gender.proto";
+import "core/FormattedText.proto";
+import "UserData/UserOnlineStatus.proto";
+
+message UserData {
+	int32 uid = 1;
+	string nickname = 2;
+	int32 age = 3;
+	Gender gender = 4;
+	string deprecated_readMe = 5;
+	FormattedText readMe = 10;
+	int32 distance = 6;
+	UserOnlineStatus onlineStatus = 7;
+	string channel = 8;
+	bool isIgnoring = 9;
+	bool isAdFree = 11;
+	AccountType accountType = 12;
+	BotInfo botInfo = 13;
+	
+	message BotInfo {
+		bool canReceiveMessages = 1;
+	}
+	
+	enum AccountType {
+		Human = 0;
+		SystemBot = 1;
+		AppBot = 2;
+	}
+}

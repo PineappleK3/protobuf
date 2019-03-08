@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "Channel/ChannelIdentifier.proto";
+
+message UserKicked {
+	ChannelIdentifier channelID = 1;
+	Reason reason = 2;
+	
+	message Reason {
+		int32 type = 1;
+		string freetext = 2;
+	}
+}

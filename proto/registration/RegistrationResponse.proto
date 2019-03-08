@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+import "registration/Error.proto";
+import "registration/Success.proto";
+
+message RegistrationResponse {
+	repeated string oks = 1;
+	repeated Error errors = 2;
+	Success success = 3;
+	string nickContext = 4;
+}
