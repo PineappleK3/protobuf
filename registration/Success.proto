@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message Success {
+	string nick = 1;
+	string checksum = 2;
+	int32 nextstep = 3;
+	bool showInterstitial = 4;
+}

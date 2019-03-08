@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message Conversation {
+	bool updateReadTimestamp = 1;
+	repeated int32 participants = 2;
+	repeated ConversationMessage messages = 3;
+	int64 archiveIndex = 4;
+	int64 deleteIndex = 5;
+	int64 lastReadIndex = 6;
+	int64 conversationId = 7;
+	int32 unreadMessageCount = 8;
+	int32 snapStatus = 9; // Enum
+}

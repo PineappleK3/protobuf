@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SnapStatusUpdate {
+	int64 conversationId = 1;
+	int32 snapStatus = 2; // Enum
+}

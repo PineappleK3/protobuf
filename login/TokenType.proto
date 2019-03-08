@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum TokenType {
+	NotSet = 0;
+	Device = 1;
+	PasswordChange = 2;
+}

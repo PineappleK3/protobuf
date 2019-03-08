@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message PrivateMessageServer {
+	int32 senderID = 1;
+	repeated int32 receiverID = 2;
+	string message = 3;
+}

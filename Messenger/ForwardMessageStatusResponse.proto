@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ForwardMessageStatusResponse {
+	Status status = 1;
+	int32 sourceUserId = 2;
+	int32 recipientCount = 3;
+	
+	enum Status {
+		OK = 0;
+		FAILED = 1;
+	}
+}

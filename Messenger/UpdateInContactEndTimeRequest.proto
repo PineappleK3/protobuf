@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message UpdateInContactEndTimeRequest {
+	int32 senderId = 1;
+	int32 receiverId = 2;
+	int64 endTimestamp = 3;
+	Status updateStatus = 4;
+	bool statusValue = 5;
+	
+	enum Status {
+		NONE = 0;
+		TUTANT = 1;
+		FRIEND = 2;
+		WATCH_LIST = 3;
+		FOTO_MEET = 4;
+	}
+}

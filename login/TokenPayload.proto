@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message TokenPayload {
+	int32 type = 1;
+	int64 userId = 2;
+	DeviceTokenData deviceTokenData = 3;
+}

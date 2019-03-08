@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message CheckFlag {
+	message RequestFlagCheck {
+		string jwt = 1;
+		repeated int32 flagsToCheck = 2;
+	}
+	
+	enum Flag {
+		CAN_USE_K3_CLIENT = 0;
+	}
+	
+	message FlagCheckResponse {
+		repeated Result results = 1;
+		bool authenticationFailed = 2;
+	
+		message Result {
+			int32 flag = 1;
+			bool passed = 2;
+		}
+	}
+}

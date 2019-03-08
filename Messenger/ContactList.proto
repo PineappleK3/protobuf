@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ContactList {
+	repeated int32 userIds = 1;
+}

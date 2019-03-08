@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SendMessageStatusResponse {
+	Status status = 1;
+	int64 messageId = 2;
+	int32 sourceUserId = 3;
+	int32 recipientCount = 3;
+	
+	enum Status {
+		OK = 0;
+		INVALID_NICKNAME = 1;
+		IS_MODERATOR = 2;
+		POSTBOX_IS_FULL = 3;
+		FILTERED = 4;
+		FAILED = 5;
+		FORWARD_OK = 6;
+	}
+}

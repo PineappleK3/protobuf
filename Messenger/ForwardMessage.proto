@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ForwardMessage {
+	repeated int32 receivers = 1;
+	int64 forwardedMessageId = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum ResponseStatus {
+	NotSet = 0;
+	Ok = 1;
+	ChannelNotFound = 2;
+	LoadTimeoutError = 3;
+	UnknownError = 4;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ChangeIgnoreStateStatusResponse {
+	Status status = 1;
+	int32 action = 2; // Enum(5)
+	int32 userId = 3;
+	
+	enum Status {
+		OK = 0;
+		NO_CHANGE = 1;
+		PROTECTED_USER = 2;
+		FAILED = 3;
+	}
+}

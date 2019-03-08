@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ArchiveConversationStatusResponse {
+	Status status = 1;
+	int64 conversationId = 2;
+	
+	enum Status {
+		OK = 0;
+		FAILED = 1;
+	}
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message MessageSendError {
+	ErrorType reason = 1;
+	string text = 2;
+	
+	enum ErrorType {
+		NicknameInvalid = 0;
+		Other = 1;		
+	}
+}

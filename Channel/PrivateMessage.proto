@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message PrivateMessage {
+	repeated string receivers = 1;
+	string message = 2;
+}

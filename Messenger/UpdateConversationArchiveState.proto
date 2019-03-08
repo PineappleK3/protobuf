@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message UpdateConversationArchiveState {
+	int64 conversationId = 1;
+	State state = 2;
+	int64 messageId = 3;
+	
+	enum State {
+		Unarchived = 0;
+		Archived = 1;
+	}
+}

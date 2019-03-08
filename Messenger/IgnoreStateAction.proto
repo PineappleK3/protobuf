@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum IgnoreStateAction {
+	IGNORE = 0;
+	UNIGNORE = 1;
+	BLOCK = 2;
+	UNBLOCK = 3;
+	ADD_PRIVATE_IGNORE = 4;
+	REMOVE_PRIVATE_IGNORE = 5;
+}

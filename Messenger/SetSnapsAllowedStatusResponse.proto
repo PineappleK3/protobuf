@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SetSnapsAllowedStatusResponse {
+	Status status = 1;
+	bool allowed = 2;
+	int32 userId = 3;
+	
+	enum Status {
+		OK = 0;
+		FAILED = 1;
+	}
+}

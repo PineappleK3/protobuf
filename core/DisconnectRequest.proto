@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message DisconnectRequest {
+	string reason = 1;
+	bool maybeFallback = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum ValidateAuthTokenWebResult {
+	ValidateAuthToken_NotSet = 0;
+	ValidateAuthToken_Valid = 1;
+	ValidateAuthToken_Expired = 2;
+	ValidateAuthToken_UnknownToken = 3;
+	ValidateAuthToken_InvalidRequest = 4;
+	ValidateAuthToken_InvalidSignature = 5;
+}

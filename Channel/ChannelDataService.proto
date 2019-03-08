@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ChannelDataService {
+	/*
+		return (e.prototype = Object.create(u.rpc.Service.prototype)).constructor = e, e.prototype.getChannelData = function e(t, n) {
+			return this.rpcCall(e, f.Channel.ChannelDataRequest, f.Channel.ChannelDataResponse, t, n)
+		}, e.prototype.getChannelList = function e(t, n) {
+			return this.rpcCall(e, f.Channel.ChannelListRequest, f.Channel.ChannelListResponse, t, n)
+		}, e.prototype.getOnlineUsers = function e(t, n) {
+			return this.rpcCall(e, f.Channel.OnlineUsersRequest, f.Channel.OnlineUsersResponse, t, n)
+		}, e.prototype.resolveChannelName = function e(t, n) {
+			return this.rpcCall(e, f.Channel.ResolveChannelNameToIdRequest, f.Channel.ResolveChannelNameToIdResponse, t, n)
+		}, e
+	*/
+}

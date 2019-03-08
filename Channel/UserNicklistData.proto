@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message UserNicklistData {
+	int32 userID = 1;
+	string nickname = 2;
+	int64 joinTimestamp = 3;
+	int32 age = 4;
+	int32 gender = 5; // Gender-Enum?
+}

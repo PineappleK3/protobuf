@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message MessageStatus {
+	Status status = 1;
+	int64 messageId = 2;
+	
+	enum Status {
+		Sent = 0;
+		ServerReceived = 1;
+	}
+}

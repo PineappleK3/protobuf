@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SetSnapsAllowed {
+	int32 userId = 1;
+	bool allowed = 2;
+}

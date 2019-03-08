@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message GetClientSettingsResponse {
+	ClientSettings settings = 1;
+	Result result = 2;
+	
+	enum Result {
+		NotSet = 0;
+		Ok = 1;
+		Error = 2;
+	}
+}

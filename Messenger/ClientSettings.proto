@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ClientSettings {
+	ConversationListFilterType conversationListFilterType = 1;
+	
+	enum ConversationListFilterType {
+		NotSet = 0;
+		AllMessages = 1;
+		UnreadMessagesOnly = 2;
+	}
+}

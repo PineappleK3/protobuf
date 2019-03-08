@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message MessageWindow {
+	string title = 1;
+	string headline = 2;
+	string text = 3;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum ChannelDataId {
+	Id = 0;
+	Name = 1;
+	MinAge = 2;
+	MaxAge = 3;
+	MaxChatters = 4;
+	AppletIds = 5;
+	Visible = 6;
+	UserCount = 7;
+	PreviewImageUrl = 8;
+	BackgroundColor = 9;
+}

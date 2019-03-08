@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum ErrorInfo {
+	fieldName = 0;
+	errorType = 1;
+	errorSubType = 2;
+	min = 3;
+	max = 4;
+	problemChar = 5;
+	customInfo = 6;
+}

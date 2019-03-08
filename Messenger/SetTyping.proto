@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message SetTyping {
+	int32 userId = 1;
+	repeated int32 participants = 2;
+	int64 conversationId = 3;
+}

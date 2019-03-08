@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message UserJoinedEvent {
+	ChannelIdentifier channelId = 1;
+	int64 userId = 2;
+	repeated int64 usersInChannel = 3;
+	int64 userListVersion = 4;
+}

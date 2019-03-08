@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum ConnectionType {
+	NotSet = 0;
+	Legacy = 1;
+	K3 = 2;
+}

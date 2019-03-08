@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message RegistrationResponse {
+	repeated string oks = 1;
+	uint32 string errors = 2; // Error Message?
+	Success success = 3;
+	string nickContext = 4;
+}

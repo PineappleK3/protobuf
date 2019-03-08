@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message FormattedText {
+	Text text = 1;
+	List list = 2;
+	Smiley smiley = 3;
+	Link link = 4;
+
+	message Text {
+		string text = 1;
+		bool bold = 2;
+		bool italic = 3;
+	}
+	
+	message List {
+		repeated FormattedText items = 1;
+	}
+	
+	message Smiley {
+		string json = 1;
+	}
+	
+	message Link {
+		string href = 1;
+		string text = 2;
+		bool bold = 3;
+		bool italic = 4;
+	}
+}

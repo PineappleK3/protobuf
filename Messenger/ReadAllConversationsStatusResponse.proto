@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message ReadAllConversationsStatusResponse {
+	Status status = 1;
+	
+	enum Status {
+		OK = 0;
+		FAILED = 1;
+	}
+}

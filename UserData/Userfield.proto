@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum Userfield {
+	Nickname = 0;
+	Age = 1;
+	Gender = 2;
+	ReadMe = 3;
+	Distance = 4;
+	OnlineStatus = 5;
+	Channel = 6;
+	IsIgnoring = 7;
+	IsAdFree = 8;
+	AccountType = 9;
+	BotInfo = 10;
+}

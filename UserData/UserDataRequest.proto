@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message UserDataRequest {
+	int32 uid = 1;
+	repeated int32 fields = 2;
+}

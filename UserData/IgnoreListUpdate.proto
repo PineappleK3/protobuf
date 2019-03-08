@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+message IgnoreListUpdate {
+	int32 userID = 1;
+	Action action = 2;
+	
+	enum Action {
+		ADD_IGNORE = 0;
+		REMOVE_IGNORE = 1;
+		ADD_BLOCK = 2;
+		REMOVE_BLOCK = 3;
+		ADD_PRIVATE_IGNORE = 4;
+		REMOVE_PRIVATE_IGNORE = 5;
+	}
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+/*
+ * Knuddels protobuf specification v.1.0.0
+ *
+ * @author Bizzi
+*/
+
+enum TokenRequestResult {
+	TokenRequestResult_NotSet = 0;
+	TokenRequestResult_Success = 1;
+	TokenRequestResult_UserUnknown = 2;
+	TokenRequestResult_InvalidCredentials = 3;
+	TokenRequestResult_InternalError = 4;
+}
